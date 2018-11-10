@@ -1,0 +1,62 @@
+{
+  "name": "egg-gateway",
+  "version": "1.0.0",
+  "description": "nodeJS server",
+  "private": true,
+  "dependencies": {
+    "await-stream-ready": "^1.0.1",
+    "egg": "^2.2.1",
+    "egg-alinode": "^2.0.1",
+    "egg-bcrypt": "^1.1.0",
+    "egg-cors": "^2.1.1",
+    "egg-jwt": "^3.1.4",
+    "egg-mongoose": "^3.1.0",
+    "egg-redis": "^2.0.0",
+    "egg-scripts": "^2.5.0",
+    "egg-validate": "^2.0.1",
+    "egg-view-nunjucks": "^2.2.0",
+    "egg-wechat-api": "^1.2.2",
+    "fs-extra": "^7.0.0",
+    "image-downloader": "^3.4.1",
+    "jsonwebtoken": "^8.3.0",
+    "koa-send": "^5.0.0",
+    "moment": "^2.22.2",
+    "ramda": "^0.25.0",
+    "stream-wormhole": "^1.1.0",
+    "svg-captcha": "^1.3.11"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^6.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=server2018-egg-geteway",
+    "stop": "egg-scripts stop --title=server2018-egg-geteway",
+    "dev": "egg-bin dev --port 7002",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "edward",
+  "license": "MIT"
+}
