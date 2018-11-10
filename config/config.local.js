@@ -30,7 +30,7 @@ module.exports = appInfo => {
 					useCreateIndex: true, // Mongoose-specific option. If true, this connection will use createIndex() instead of ensureIndex() for automatic index builds via Model.init().
 					// useFindAndModify: false, // True by default. Set to false to make findOneAndUpdate() and findOneAndRemove() use native findOneAndUpdate() rather than findAndModify().
 					user: "egg_gateway_xiayuting",
-					pass: "123123qwe",
+					pass: "",
 				}
 			},
 			eggBlog: {
@@ -41,7 +41,7 @@ module.exports = appInfo => {
 					useCreateIndex: true, // Mongoose-specific option. If true, this connection will use createIndex() instead of ensureIndex() for automatic index builds via Model.init().
 					// useFindAndModify: false, // True by default. Set to false to make findOneAndUpdate() and findOneAndRemove() use native findOneAndUpdate() rather than findAndModify().
 					user: "egg_blog_xiayuting",
-					pass: "123123qwe",
+					pass: "",
 				},
 			},
 		},
@@ -51,7 +51,7 @@ module.exports = appInfo => {
 		client: {
 			port: 12343, // Redis port
 			host: '127.0.0.1', // Redis host
-			password: '123123qwe',
+			password: '',
 			db: 0,
 		},
 	}

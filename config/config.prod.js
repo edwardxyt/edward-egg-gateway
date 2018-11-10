@@ -31,7 +31,7 @@ module.exports = appInfo => {
 					useNewUrlParser: true,
 					useCreateIndex: true,
 					user: "egg_gateway_xiayuting",
-					pass: "123123qwe"
+					pass: ""
 				}
 			},
 			eggBlog: {
@@ -40,7 +40,7 @@ module.exports = appInfo => {
 					useNewUrlParser: true,
 					useCreateIndex: true,
 					user: "egg_blog_xiayuting",
-					pass: "123123qwe"
+					pass: ""
 				},
 			},
 		},
@@ -50,7 +50,7 @@ module.exports = appInfo => {
 		client: {
 			port: 12343, // Redis port
 			host: '127.0.0.1', // Redis host
-			password: '123123qwe',
+			password: '',
 			db: 0,
 		},
 	}

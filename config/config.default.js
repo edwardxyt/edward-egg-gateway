@@ -21,9 +21,7 @@ module.exports = appInfo => {
 
 	// 从 `Node.js 性能平台` 获取对应的接入参数
 	config.alinode = {
-		server: 'wss://agentserver.node.aliyun.com:8080',
-		appid: '75834',
-		secret: '770330dcd6e86fde4c93f33c56c45ab6a1f5cd30',
+
 	};
 
 	config.multipart = {
@@ -54,7 +52,7 @@ module.exports = appInfo => {
 	};
 
 	config.jwt = {
-		secret: '^$%#^*#@123qweasdzxc',
+		secret: '^$%#^*#@sdfsdfsdfeter',
 		exp: 60 * 60 * 24, //自定义配置
 		// enable: true, // default is false 启动后app.jwt失效
 		// match: '/api/user/access/current', //匹配
@@ -62,15 +60,9 @@ module.exports = appInfo => {
 	};
 
 	// 注释 origin: '*' 后 白名单将开启
-	config.cors = {
-		origin: '*',
-		allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
-	};
+	config.cors = {};
 
-	exports.wechatApi = {
-		appId: 'wx7cf8fb2300792bb5',
-		appSecret: '02a8c90d37d10f8a40e7ad02e602289e',
-	};
+	exports.wechatApi = {};
 
 	return config;
 };
